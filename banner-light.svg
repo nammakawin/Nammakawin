@@ -1,0 +1,228 @@
+<svg viewBox="0 0 1280 700" xmlns="http://www.w3.org/2000/svg" font-family="'SFMono-Regular','Consolas','Liberation Mono',monospace">
+<defs>
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="700" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#F7FAFC"/>
+    <stop offset="45%" stop-color="#EEF2F7"/>
+    <stop offset="100%" stop-color="#F7FAFC"/>
+  </linearGradient>
+  <linearGradient id="nameGrad" x1="60" y1="0" x2="560" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#E2661B">
+      <animate attributeName="stop-color" values="#E2661B;#0F9C8E;#7C5CD1;#E2661B" dur="8s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" stop-color="#0F9C8E">
+      <animate attributeName="stop-color" values="#0F9C8E;#7C5CD1;#E2661B;#0F9C8E" dur="8s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+  <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0F9C8E" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#0F9C8E" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#0F9C8E" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="pelletGrad">
+    <stop offset="0%" stop-color="#E2661B" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#E2661B" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="orbTeal">
+    <stop offset="0%" stop-color="#0F9C8E" stop-opacity="0.18"/>
+    <stop offset="100%" stop-color="#0F9C8E" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="orbViolet">
+    <stop offset="0%" stop-color="#7C5CD1" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#7C5CD1" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow6" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4"/>
+  </filter>
+  <clipPath id="bannerClip">
+    <rect x="0" y="0" width="1280" height="700" rx="28" ry="28"/>
+  </clipPath>
+  <clipPath id="holoClip">
+    <rect x="760" y="60" width="460" height="260" rx="16" ry="16"/>
+  </clipPath>
+  <clipPath id="termClip">
+    <rect x="50" y="30" width="0" height="34">
+      <animate attributeName="width" from="0" to="430" dur="1.4s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1"/>
+    </rect>
+  </clipPath>
+  <clipPath id="tagClip">
+    <rect x="50" y="235" width="0" height="70">
+      <animate attributeName="width" from="0" to="640" dur="1.6s" begin="1.8s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1"/>
+    </rect>
+  </clipPath>
+  <clipPath id="codeClip1"><rect x="780" y="368" width="0" height="20"><animate attributeName="width" from="0" to="400" dur="1s" begin="3.4s" fill="freeze"/></rect></clipPath>
+  <clipPath id="codeClip2"><rect x="780" y="398" width="0" height="20"><animate attributeName="width" from="0" to="400" dur="1s" begin="4.4s" fill="freeze"/></rect></clipPath>
+  <clipPath id="codeClip3"><rect x="780" y="428" width="0" height="20"><animate attributeName="width" from="0" to="400" dur="1s" begin="5.4s" fill="freeze"/></rect></clipPath>
+  <clipPath id="codeClip4"><rect x="780" y="458" width="0" height="20"><animate attributeName="width" from="0" to="400" dur="1s" begin="6.4s" fill="freeze"/></rect></clipPath>
+</defs>
+<style>
+  @keyframes fadeUp { from { opacity:0; transform:translateY(14px);} to { opacity:1; transform:translateY(0);} }
+  @keyframes pulse { 0%,100% { opacity:0.55; } 50% { opacity:1; } }
+  @keyframes drift { 0% { opacity:0; transform:translateY(0);} 10% { opacity:0.9;} 90% { opacity:0.6;} 100% { opacity:0; transform:translateY(-620px);} }
+  @keyframes cursorBlink { 0%,49% { opacity:1;} 50%,100% { opacity:0;} }
+  @keyframes roleFade { 0%,100% { opacity:0;} 4%,29% { opacity:1;} 33% { opacity:0;} }
+  @keyframes flicker { 0%,19%,21%,23%,54%,56%,100% { opacity:1;} 20%,22%,55% { opacity:0.4;} }
+  @keyframes scanMove { 0% { transform:translateY(-40px);} 100% { transform:translateY(300px);} }
+  @keyframes holoReveal { from { opacity:0;} to { opacity:1;} }
+  @keyframes pillPop { from { opacity:0; transform:translateY(10px) scale(0.92);} to { opacity:1; transform:translateY(0) scale(1);} }
+  @keyframes barGlow { 0%,100% { opacity:0.85;} 50% { opacity:1;} }
+
+  .letter { opacity:0; animation:fadeUp .6s ease-out forwards; }
+  .l0{animation-delay:.3s}.l1{animation-delay:.37s}.l2{animation-delay:.44s}.l3{animation-delay:.51s}.l4{animation-delay:.58s}
+  .l5{animation-delay:.65s}.l6{animation-delay:.72s}.l7{animation-delay:.79s}.l8{animation-delay:.86s}
+
+  .cursor { animation: cursorBlink 1s step-end infinite; }
+  .role { opacity:0; animation:roleFade 9s ease-in-out infinite; }
+  .role1{animation-delay:0s} .role2{animation-delay:3s} .role3{animation-delay:6s}
+
+  .orb { animation:pulse 6s ease-in-out infinite; }
+  .particle { animation:drift linear infinite; }
+
+  .pill { opacity:0; animation:pillPop .5s ease-out forwards; }
+  .about { opacity:0; animation:fadeUp .6s ease-out forwards; }
+  .neon { animation:flicker 5s linear infinite; }
+  .scanline { animation:scanMove 3.5s linear infinite; }
+  .holo { animation:holoReveal 1.5s ease-out forwards; }
+  .bar { animation:barGlow 3s ease-in-out infinite; }
+  .codeline { opacity:0; animation:fadeUp .3s ease-out forwards; }
+  .cc1{animation-delay:3.4s}.cc2{animation-delay:4.4s}.cc3{animation-delay:5.4s}.cc4{animation-delay:6.4s}
+</style>
+
+<g clip-path="url(#bannerClip)">
+  <rect x="0" y="0" width="1280" height="700" fill="url(#bgGrad)"/>
+
+  <g stroke="#0F9C8E" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0,80 H1280 M0,160 H1280 M0,240 H1280 M0,320 H1280 M0,400 H1280 M0,480 H1280 M0,560 H1280 M0,640 H1280"/>
+    <path d="M80,0 V700 M240,0 V700 M400,0 V700 M560,0 V700 M720,0 V700 M880,0 V700 M1040,0 V700 M1200,0 V700"/>
+  </g>
+
+  <circle class="orb" cx="120" cy="600" r="140" fill="url(#orbTeal)"/>
+  <circle class="orb" cx="1150" cy="620" r="160" fill="url(#orbViolet)" style="animation-delay:1.5s"/>
+  <circle class="orb" cx="980" cy="40" r="120" fill="url(#orbTeal)" style="animation-delay:3s"/>
+
+  <g fill="url(#pelletGrad)">
+    <circle class="particle" cx="150" cy="660" r="5" style="animation-duration:7s; animation-delay:0s"/>
+    <circle class="particle" cx="300" cy="670" r="4" style="animation-duration:9s; animation-delay:1.2s"/>
+    <circle class="particle" cx="500" cy="655" r="6" style="animation-duration:8s; animation-delay:2.4s"/>
+    <circle class="particle" cx="660" cy="665" r="4" style="animation-duration:6.5s; animation-delay:0.6s"/>
+    <circle class="particle" cx="900" cy="650" r="5" style="animation-duration:7.5s; animation-delay:1.8s"/>
+    <circle class="particle" cx="1100" cy="660" r="4" style="animation-duration:8.5s; animation-delay:3s"/>
+    <circle class="particle" cx="1220" cy="670" r="5" style="animation-duration:7s; animation-delay:2s"/>
+  </g>
+
+  <g font-size="20" fill="#0F9C8E">
+    <text x="50" y="55">kawin@polymer-lab:~$</text>
+    <g clip-path="url(#termClip)">
+      <text x="290" y="55" fill="#1E293B"> cat README.md</text>
+    </g>
+    <rect class="cursor" x="426" y="40" width="10" height="20" fill="#0F9C8E"/>
+  </g>
+
+  <g font-size="80" font-weight="700" letter-spacing="2" fill="url(#nameGrad)">
+    <text class="letter l0" x="50"  y="175">K</text>
+    <text class="letter l1" x="100" y="175">A</text>
+    <text class="letter l2" x="150" y="175">W</text>
+    <text class="letter l3" x="215" y="175">I</text>
+    <text class="letter l4" x="245" y="175">N</text>
+    <text class="letter l5" x="325" y="175">B</text>
+    <text class="letter l6" x="385" y="175">K</text>
+  </g>
+
+  <g font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="24" fill="#334155">
+    <text class="role role1" x="52" y="215">B.Tech Polymer Engineering Student</text>
+    <text class="role role2" x="52" y="215">CIPET DPMT Graduate</text>
+    <text class="role role3" x="52" y="215">Injection Mould &amp; CAD Designer</text>
+  </g>
+
+  <rect x="48" y="235" width="644" height="70" rx="10" fill="#FFFFFF" stroke="#0F9C8E" stroke-opacity="0.3"/>
+  <text x="64" y="260" font-family="'Segoe UI',sans-serif" font-size="15" fill="#0F9C8E">&#8220;</text>
+  <g clip-path="url(#tagClip)">
+    <text x="64" y="265" font-family="'Segoe UI',sans-serif" font-size="16" fill="#1E293B">
+      <tspan x="64" dy="0">Turning polymers into products through</tspan>
+      <tspan x="64" dy="24">design, processing and testing.</tspan>
+    </text>
+  </g>
+
+  <g font-family="'Segoe UI',sans-serif" font-size="14" fill="#1E293B">
+    <g class="pill" style="animation-delay:3.6s"><rect x="50" y="330" width="76" height="30" rx="15" fill="#FFFFFF" stroke="#E2661B" stroke-opacity="0.5"/><text x="66" y="350">Python</text></g>
+    <g class="pill" style="animation-delay:3.7s"><rect x="134" y="330" width="82" height="30" rx="15" fill="#FFFFFF" stroke="#0F9C8E" stroke-opacity="0.5"/><text x="150" y="350">MATLAB</text></g>
+    <g class="pill" style="animation-delay:3.8s"><rect x="224" y="330" width="72" height="30" rx="15" fill="#FFFFFF" stroke="#7C5CD1" stroke-opacity="0.5"/><text x="240" y="350">CATIA</text></g>
+    <g class="pill" style="animation-delay:3.9s"><rect x="304" y="330" width="92" height="30" rx="15" fill="#FFFFFF" stroke="#E2661B" stroke-opacity="0.5"/><text x="320" y="350">PTC Creo</text></g>
+    <g class="pill" style="animation-delay:4.0s"><rect x="404" y="330" width="102" height="30" rx="15" fill="#FFFFFF" stroke="#0F9C8E" stroke-opacity="0.5"/><text x="420" y="350">Fusion 360</text></g>
+    <g class="pill" style="animation-delay:4.1s"><rect x="514" y="330" width="150" height="30" rx="15" fill="#FFFFFF" stroke="#7C5CD1" stroke-opacity="0.5"/><text x="530" y="350">Injection Moulding</text></g>
+    <g class="pill" style="animation-delay:4.2s"><rect x="50" y="370" width="92" height="30" rx="15" fill="#FFFFFF" stroke="#E2661B" stroke-opacity="0.5"/><text x="66" y="390">Extrusion</text></g>
+    <g class="pill" style="animation-delay:4.3s"><rect x="150" y="370" width="130" height="30" rx="15" fill="#FFFFFF" stroke="#0F9C8E" stroke-opacity="0.5"/><text x="166" y="390">Polymer Testing</text></g>
+    <g class="pill" style="animation-delay:4.4s"><rect x="288" y="370" width="94" height="30" rx="15" fill="#FFFFFF" stroke="#7C5CD1" stroke-opacity="0.5"/><text x="304" y="390">CAD/CAM</text></g>
+    <g class="pill" style="animation-delay:4.5s"><rect x="390" y="370" width="132" height="30" rx="15" fill="#FFFFFF" stroke="#E2661B" stroke-opacity="0.5"/><text x="406" y="390">Quality Control</text></g>
+  </g>
+
+  <g font-family="'Segoe UI',sans-serif" font-size="15" fill="#475569">
+    <text class="about" x="50" y="435" style="animation-delay:4.8s">Interested in polymer processing, tool design, manufacturing,</text>
+    <text class="about" x="50" y="458" style="animation-delay:4.95s">automation and sustainable materials.</text>
+  </g>
+
+  <g font-family="'Segoe UI',sans-serif" font-size="13" fill="#475569">
+    <text x="50" y="500">Injection Moulding</text>
+    <rect x="50" y="508" width="300" height="8" rx="4" fill="#E2E8F0"/>
+    <rect class="bar" x="50" y="508" height="8" rx="4" fill="#E2661B"><animate attributeName="width" from="0" to="255" dur="1.4s" begin="5.2s" fill="freeze"/></rect>
+
+    <text x="50" y="535">Extrusion &amp; Processing</text>
+    <rect x="50" y="543" width="300" height="8" rx="4" fill="#E2E8F0"/>
+    <rect class="bar" x="50" y="543" height="8" rx="4" fill="#0F9C8E"><animate attributeName="width" from="0" to="225" dur="1.4s" begin="5.4s" fill="freeze"/></rect>
+
+    <text x="50" y="570">CAD / Tool Design</text>
+    <rect x="50" y="578" width="300" height="8" rx="4" fill="#E2E8F0"/>
+    <rect class="bar" x="50" y="578" height="8" rx="4" fill="#7C5CD1"><animate attributeName="width" from="0" to="270" dur="1.4s" begin="5.6s" fill="freeze"/></rect>
+  </g>
+
+  <g class="holo" style="animation-delay:1.2s">
+    <rect x="760" y="60" width="460" height="260" rx="16" fill="#FFFFFF" stroke="#0F9C8E" stroke-opacity="0.35"/>
+    <text x="780" y="88" font-family="'Segoe UI',sans-serif" font-size="12" fill="#0F9C8E" letter-spacing="2">MATERIAL SCAN // POLYMER LAB</text>
+    <g clip-path="url(#holoClip)">
+      <g transform="translate(990,210)" filter="url(#glow6)">
+        <circle cx="0" cy="0" r="10" fill="#E2661B"/>
+        <circle cx="60" cy="-35" r="8" fill="#0F9C8E"/>
+        <circle cx="-60" cy="-35" r="8" fill="#0F9C8E"/>
+        <circle cx="60" cy="35" r="8" fill="#7C5CD1"/>
+        <circle cx="-60" cy="35" r="8" fill="#7C5CD1"/>
+        <circle cx="0" cy="70" r="7" fill="#0F9C8E"/>
+        <circle cx="0" cy="-70" r="7" fill="#0F9C8E"/>
+        <g stroke="#0F9C8E" stroke-width="2" stroke-opacity="0.6">
+          <line x1="0" y1="0" x2="60" y2="-35"/>
+          <line x1="0" y1="0" x2="-60" y2="-35"/>
+          <line x1="0" y1="0" x2="60" y2="35"/>
+          <line x1="0" y1="0" x2="-60" y2="35"/>
+          <line x1="60" y1="-35" x2="0" y2="-70"/>
+          <line x1="-60" y1="-35" x2="0" y2="-70"/>
+          <line x1="60" y1="35" x2="0" y2="70"/>
+          <line x1="-60" y1="35" x2="0" y2="70"/>
+        </g>
+      </g>
+      <g stroke="#0F9C8E" stroke-opacity="0.4" fill="none">
+        <circle cx="990" cy="210" r="95"/>
+        <line x1="940" y1="210" x2="960" y2="210"/>
+        <line x1="1020" y1="210" x2="1040" y2="210"/>
+        <line x1="990" y1="160" x2="990" y2="180"/>
+        <line x1="990" y1="240" x2="990" y2="260"/>
+      </g>
+      <rect class="scanline" x="760" y="0" width="460" height="30" fill="url(#scanGrad)"/>
+      <g font-family="'SFMono-Regular',monospace" font-size="11" fill="#0F9C8E">
+        <text x="780" y="300">MELT TEMP: 230&#176;C</text>
+        <text x="1000" y="300">PRESSURE: 850 bar</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="760" y="340" width="460" height="130" rx="12" fill="#FFFFFF" stroke="#7C5CD1" stroke-opacity="0.3"/>
+  <g font-size="10" fill="#94A3B8"><circle cx="778" cy="356" r="4" fill="#FF6B6B"/><circle cx="794" cy="356" r="4" fill="#FFD166"/><circle cx="810" cy="356" r="4" fill="#0F9C8E"/></g>
+  <g font-family="'SFMono-Regular',monospace" font-size="15" fill="#1E293B">
+    <g class="codeline cc1"><g clip-path="url(#codeClip1)"><text x="780" y="382" fill="#7C5CD1">def</text><text x="812" y="382" fill="#0F9C8E"> build_dreams():</text></g></g>
+    <g class="codeline cc2"><g clip-path="url(#codeClip2)"><text x="800" y="412">process = [&#8220;Injection Moulding&#8221;, &#8220;Extrusion&#8221;]</text></g></g>
+    <g class="codeline cc3"><g clip-path="url(#codeClip3)"><text x="800" y="442">status = &#8220;Ready to Innovate&#8221;</text></g></g>
+    <g class="codeline cc4"><g clip-path="url(#codeClip4)"><text x="800" y="472" fill="#7C5CD1">return<tspan fill="#1E293B"> status</tspan></text></g></g>
+  </g>
+
+  <text class="neon" x="640" y="650" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="30" font-weight="700" letter-spacing="6" fill="#0F9C8E">DESIGN &#8226; PROCESS &#8226; TEST &#8226; INNOVATE</text>
+
+  <rect x="1" y="1" width="1278" height="698" rx="27" ry="27" fill="none" stroke="#0F9C8E" stroke-opacity="0.2" stroke-width="1.5"/>
+</g>
+</svg>

@@ -1,0 +1,134 @@
+<svg viewBox="0 0 420 640" xmlns="http://www.w3.org/2000/svg" font-family="'SFMono-Regular','Consolas',monospace">
+<defs>
+  <linearGradient id="strapGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0B2E33"/>
+    <stop offset="50%" stop-color="#0F3B42"/>
+    <stop offset="100%" stop-color="#0B2E33"/>
+  </linearGradient>
+  <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#111827"/>
+    <stop offset="100%" stop-color="#0A0F1C"/>
+  </linearGradient>
+  <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="45%" stop-color="#7DF9FF" stop-opacity="0.35"/>
+    <stop offset="55%" stop-color="#ffffff" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="ringGrad">
+    <stop offset="70%" stop-color="#0F3B42" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0.6"/>
+  </radialGradient>
+  <filter id="glowSoft" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="5"/>
+  </filter>
+  <clipPath id="cardClip">
+    <rect x="80" y="260" width="260" height="340" rx="18"/>
+  </clipPath>
+</defs>
+<style>
+  @keyframes dropIn { 0% { transform:translateY(-320px); opacity:0;} 70% { opacity:1;} 100% { transform:translateY(0); opacity:1;} }
+  @keyframes swingSettle {
+    0% { transform:rotate(-28deg); }
+    15% { transform:rotate(18deg); }
+    30% { transform:rotate(-12deg); }
+    45% { transform:rotate(8deg); }
+    60% { transform:rotate(-5deg); }
+    75% { transform:rotate(3deg); }
+    90% { transform:rotate(-1.5deg); }
+    100% { transform:rotate(0deg); }
+  }
+  @keyframes gentleSway {
+    0% { transform:rotate(0deg); }
+    25% { transform:rotate(3deg); }
+    50% { transform:rotate(0deg); }
+    75% { transform:rotate(-3deg); }
+    100% { transform:rotate(0deg); }
+  }
+  @keyframes shineMove { 0% { transform:translateX(-320px);} 100% { transform:translateX(320px);} }
+  @keyframes fadeIn { from { opacity:0;} to { opacity:1;} }
+  @keyframes barPulse { 0%,100% { opacity:0.9;} 50% { opacity:0.5;} }
+
+  .dropWrap { animation: dropIn 1s cubic-bezier(.2,.7,.3,1) forwards; }
+  .pivot { transform-origin:210px 6px; animation: swingSettle 3s ease-out 1s forwards, gentleSway 4s ease-in-out 4s infinite; }
+  .shine { animation: shineMove 4.5s ease-in-out infinite; }
+  .fade { opacity:0; animation: fadeIn .6s ease-out forwards; }
+  .barcodebar { animation: barPulse 3s ease-in-out infinite; }
+</style>
+
+<g class="dropWrap">
+  <g class="pivot">
+    <!-- ring + clasp -->
+    <circle cx="210" cy="8" r="9" fill="none" stroke="#94A3B8" stroke-width="3"/>
+    <rect x="198" y="14" width="24" height="16" rx="4" fill="#94A3B8"/>
+
+    <!-- strap -->
+    <rect x="184" y="26" width="52" height="250" fill="url(#strapGrad)"/>
+    <g fill="#5EEAD4" font-size="11" letter-spacing="2" opacity="0.85">
+      <text x="196" y="70">CIPET</text>
+      <text x="192" y="130">POLYMER</text>
+      <text x="200" y="190">LAB</text>
+      <text x="192" y="250">ACCESS</text>
+    </g>
+    <g stroke="#5EEAD4" stroke-opacity="0.25">
+      <line x1="184" y1="50" x2="236" y2="50"/>
+      <line x1="184" y1="110" x2="236" y2="110"/>
+      <line x1="184" y1="170" x2="236" y2="170"/>
+      <line x1="184" y1="230" x2="236" y2="230"/>
+    </g>
+
+    <!-- clip/grommet -->
+    <circle cx="210" cy="270" r="10" fill="#0B2E33" stroke="#94A3B8" stroke-width="2"/>
+    <circle cx="210" cy="270" r="4" fill="#1E293B"/>
+
+    <!-- card -->
+    <rect x="80" y="260" width="260" height="340" rx="18" fill="url(#cardGrad)" stroke="#2DD4BF" stroke-opacity="0.4"/>
+
+    <g clip-path="url(#cardClip)">
+      <!-- header strip -->
+      <rect x="80" y="260" width="260" height="46" fill="#0B1220"/>
+      <text x="100" y="288" font-size="13" fill="#5EEAD4" letter-spacing="2">POLYMER LAB // ID</text>
+
+      <!-- avatar ring with molecule monogram -->
+      <circle cx="210" cy="380" r="56" fill="url(#ringGrad)"/>
+      <circle cx="210" cy="380" r="46" fill="#0F1626" stroke="#2DD4BF" stroke-width="2"/>
+      <g filter="url(#glowSoft)">
+        <circle cx="210" cy="380" r="6" fill="#FF8A3D"/>
+        <circle cx="234" cy="364" r="5" fill="#2DD4BF"/>
+        <circle cx="186" cy="364" r="5" fill="#2DD4BF"/>
+        <circle cx="234" cy="396" r="5" fill="#A78BFA"/>
+        <circle cx="186" cy="396" r="5" fill="#A78BFA"/>
+        <g stroke="#5EEAD4" stroke-width="1.5" stroke-opacity="0.8">
+          <line x1="210" y1="380" x2="234" y2="364"/>
+          <line x1="210" y1="380" x2="186" y2="364"/>
+          <line x1="210" y1="380" x2="234" y2="396"/>
+          <line x1="210" y1="380" x2="186" y2="396"/>
+        </g>
+      </g>
+
+      <!-- name / role / handle -->
+      <text class="fade" x="210" y="462" text-anchor="middle" font-size="20" font-weight="700" fill="#E2E8F0" style="animation-delay:.2s">KAWIN B K</text>
+      <text class="fade" x="210" y="484" text-anchor="middle" font-size="12" fill="#94A3B8" style="animation-delay:.35s">B.Tech Polymer Engineering</text>
+      <text class="fade" x="210" y="500" text-anchor="middle" font-size="12" fill="#2DD4BF" style="animation-delay:.5s">@Nammakawin</text>
+
+      <!-- barcode -->
+      <g class="barcodebar fade" style="animation-delay:.65s" fill="#CBD5E1">
+        <rect x="110" y="530" width="2" height="34"/><rect x="115" y="530" width="4" height="34"/><rect x="122" y="530" width="2" height="34"/>
+        <rect x="128" y="530" width="3" height="34"/><rect x="134" y="530" width="2" height="34"/><rect x="140" y="530" width="5" height="34"/>
+        <rect x="148" y="530" width="2" height="34"/><rect x="154" y="530" width="3" height="34"/><rect x="160" y="530" width="2" height="34"/>
+        <rect x="166" y="530" width="4" height="34"/><rect x="173" y="530" width="2" height="34"/><rect x="179" y="530" width="3" height="34"/>
+        <rect x="186" y="530" width="2" height="34"/><rect x="192" y="530" width="5" height="34"/><rect x="200" y="530" width="2" height="34"/>
+        <rect x="206" y="530" width="3" height="34"/><rect x="213" y="530" width="2" height="34"/><rect x="219" y="530" width="4" height="34"/>
+        <rect x="226" y="530" width="2" height="34"/><rect x="232" y="530" width="3" height="34"/><rect x="239" y="530" width="2" height="34"/>
+        <rect x="245" y="530" width="5" height="34"/><rect x="253" y="530" width="2" height="34"/><rect x="259" y="530" width="3" height="34"/>
+        <rect x="266" y="530" width="2" height="34"/><rect x="272" y="530" width="4" height="34"/><rect x="279" y="530" width="2" height="34"/>
+        <rect x="285" y="530" width="3" height="34"/><rect x="292" y="530" width="2" height="34"/><rect x="298" y="530" width="4" height="34"/>
+      </g>
+      <text x="210" y="580" text-anchor="middle" font-size="10" fill="#64748B" letter-spacing="3">KBK-2026-POLY</text>
+
+      <!-- holographic shine sweep -->
+      <rect class="shine" x="60" y="240" width="120" height="400" fill="url(#shineGrad)" transform="rotate(20 210 430)"/>
+    </g>
+  </g>
+</g>
+</svg>

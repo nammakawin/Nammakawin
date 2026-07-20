@@ -1,0 +1,44 @@
+<svg viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+<defs>
+  <linearGradient id="sBg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0A0F1C"/>
+    <stop offset="100%" stop-color="#121A2E"/>
+  </linearGradient>
+  <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FF8A3D"/>
+    <stop offset="100%" stop-color="#2DD4BF"/>
+  </linearGradient>
+  <clipPath id="sClip"><rect x="0" y="0" width="495" height="195" rx="16"/></clipPath>
+</defs>
+<style>
+  @keyframes slideIn { from { opacity:0; transform:translateX(-16px);} to { opacity:1; transform:translateX(0);} }
+  @keyframes fadeIn { from { opacity:0;} to { opacity:1;} }
+  .row { opacity:0; animation: slideIn .5s ease-out forwards; }
+  .r0{animation-delay:.2s}.r1{animation-delay:.4s}.r2{animation-delay:.6s}.r3{animation-delay:.8s}.r4{animation-delay:1s}
+  .title { opacity:0; animation: fadeIn .6s ease-out forwards; }
+  .ring { animation: fadeIn .6s ease-out .3s forwards; opacity:0; }
+</style>
+<g clip-path="url(#sClip)">
+  <rect width="495" height="195" fill="url(#sBg)"/>
+  <text class="title" x="25" y="35" font-size="18" font-weight="700" fill="#E2E8F0">Kawin B K's GitHub Stats</text>
+
+  <g font-size="13" fill="#CBD5E1">
+    <g class="row r0"><circle cx="30" cy="65" r="4" fill="#FF8A3D"/><text x="42" y="70">Total Stars Earned:</text><text x="230" y="70" fill="#E2E8F0">12</text></g>
+    <g class="row r1"><circle cx="30" cy="90" r="4" fill="#2DD4BF"/><text x="42" y="95">Total Commits:</text><text x="230" y="95" fill="#E2E8F0">438</text></g>
+    <g class="row r2"><circle cx="30" cy="115" r="4" fill="#A78BFA"/><text x="42" y="120">Total PRs:</text><text x="230" y="120" fill="#E2E8F0">9</text></g>
+    <g class="row r3"><circle cx="30" cy="140" r="4" fill="#5EEAD4"/><text x="42" y="145">Total Issues:</text><text x="230" y="145" fill="#E2E8F0">3</text></g>
+    <g class="row r4"><circle cx="30" cy="165" r="4" fill="#FF8A3D"/><text x="42" y="170">Contributed to (last year):</text><text x="230" y="170" fill="#E2E8F0">6</text></g>
+  </g>
+
+  <g class="ring" transform="translate(410,97)">
+    <circle r="55" fill="none" stroke="#1E293B" stroke-width="10"/>
+    <circle r="55" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-linecap="round"
+      stroke-dasharray="345.6" stroke-dashoffset="345.6" transform="rotate(-90)">
+      <animate attributeName="stroke-dashoffset" from="345.6" to="62" dur="1.6s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1"/>
+    </circle>
+    <text text-anchor="middle" y="6" font-size="22" font-weight="700" fill="#E2E8F0">A+</text>
+  </g>
+
+  <text x="25" y="188" font-size="9" fill="#475569">Update these numbers periodically &#8226; api.github.com/users/Nammakawin</text>
+</g>
+</svg>
