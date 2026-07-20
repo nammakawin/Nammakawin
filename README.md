@@ -1,16 +1,21 @@
-## Hi there 👋
+High quality anime-style digital illustration of a young Polymer Engineer sitting comfortably in a modern chair with a dark laptop on his lap. He has black hair and a friendly smile.
 
-<!--
-**nammakawin/Nammakawin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+He is wearing a white lab coat over a blue t-shirt with Polymer Engineering written on it and blue jeans. Safety glasses are resting on his head.
 
-Here are some ideas to get you started:
+Beside him is an engineering desk containing:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Polymer pellets in small transparent containers
+- Injection mould components
+- Tensile testing specimens
+- Extrusion die sample
+- CAD drawings of moulds
+- Coffee mug with "Mould. Test. Innovate."
+- Notebook with today's plan:
+  Design
+  Process
+  Test
+  Improve
+
+The laptop screen displays polymer processing simulations.
+
+Pure white background, vibrant colors, warm lighting, highly detailed anime artwork, full body visible.
