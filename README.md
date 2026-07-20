@@ -1,98 +1,149 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=1">
-  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=1">
-  <img src="banner.svg?v=1" alt="Kawin B K — Polymer Engineering Lab banner" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=2">
+  <img src="banner.svg?v=2" alt="Kawin B K Banner" width="100%">
 </picture>
-
-<img src="lanyard.svg?v=1" alt="Kawin B K ID badge" width="220">
 
 <br>
 
-![Profile views](https://komarev.com/ghpvc/?username=Nammakawin&color=2DD4BF&style=flat-square&label=PROFILE+VIEWS)
-[![GitHub](https://img.shields.io/badge/GitHub-Nammakawin-0F1626?style=flat-square&logo=github&logoColor=5EEAD4)](https://github.com/Nammakawin)
-[![Email](https://img.shields.io/badge/Email-nammakawin%40gmail.com-0F1626?style=flat-square&logo=gmail&logoColor=FF8A3D)](mailto:nammakawin@gmail.com)
+<img src="lanyard.svg?v=2" width="250">
+
+<br><br>
+
+![](https://komarev.com/ghpvc/?username=Nammakawin&color=blueviolet&style=flat-square&label=PROFILE+VIEWS)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Nammakawin-black?style=for-the-badge&logo=github)](https://github.com/Nammakawin)
 
 </div>
 
+---
+
+# Kawin B K
+
+### Polymer Processing & Tool Design Engineer
+
+> Turning polymers into products through design, processing and testing.
+
+---
+
 ## About Me
 
-B.Tech Polymer Engineering Student and CIPET DPMT graduate, interested in polymer processing, tool design, manufacturing, automation and sustainable materials.
+- B.Tech Polymer Engineering Student
+- CIPET DPMT Graduate
+- Injection Moulding Enthusiast
+- Polymer Processing Engineer
+- CAD & Tool Design
+- Manufacturing & Quality Control
+- Sustainable Polymer Research
 
-```
+---
+
+## Terminal
+
+```bash
 kawin@polymer-lab:~$ polymer_process.py
+
 Loading Polymer Engineer...
-Initializing Skills...
+
 > Injection Moulding
 > Extrusion
-> Quality Testing
-> CAD Design
-Status: Ready to Innovate.
+> Polymer Testing
+> Tool Design
+> Manufacturing
+
+Status: READY TO INNOVATE
 ```
+
+---
 
 ## Tech Stack
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/-Python-0F1626?style=for-the-badge&logo=python&logoColor=FF8A3D)
-![MATLAB](https://img.shields.io/badge/-MATLAB-0F1626?style=for-the-badge&logo=mathworks&logoColor=2DD4BF)
-![CATIA](https://img.shields.io/badge/-CATIA-0F1626?style=for-the-badge&logoColor=A78BFA)
-![Fusion360](https://img.shields.io/badge/-Fusion%20360-0F1626?style=for-the-badge&logo=autodesk&logoColor=FF8A3D)
-![CAD](https://img.shields.io/badge/-CAD%2FCAM-0F1626?style=for-the-badge&logoColor=5EEAD4)
+![Python](https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python)
+
+![MATLAB](https://img.shields.io/badge/MATLAB-orange?style=for-the-badge)
+
+![PTC Creo](https://img.shields.io/badge/PTC_Creo-black?style=for-the-badge)
+
+![Fusion 360](https://img.shields.io/badge/Fusion_360-red?style=for-the-badge)
+
+![CATIA](https://img.shields.io/badge/CATIA-blue?style=for-the-badge)
+
+![Injection Moulding](https://img.shields.io/badge/Injection_Moulding-purple?style=for-the-badge)
+
+![Extrusion](https://img.shields.io/badge/Extrusion-blueviolet?style=for-the-badge)
+
+![Polymer Testing](https://img.shields.io/badge/Polymer_Testing-green?style=for-the-badge)
+
+![Quality Control](https://img.shields.io/badge/Quality_Control-black?style=for-the-badge)
 
 </div>
+
+---
 
 ## GitHub Stats
 
 <div align="center">
-<table>
-<tr>
-<td><img src="stats.svg?v=1" alt="GitHub stats" width="100%"></td>
-<td><img src="langs.svg?v=1" alt="Top languages" width="100%"></td>
-</tr>
-</table>
 
-<img src="trophies.svg?v=1" alt="GitHub trophies" width="100%">
+<img src="stats.svg?v=2" width="48%">
+<img src="langs.svg?v=2" width="48%">
+
+<br><br>
+
+<img src="trophies.svg?v=2" width="100%">
+
 </div>
 
-## Suggested Projects
+---
 
-| Project | Focus |
-|---|---|
-| Injection Mould Design | Tool design and mould-flow optimisation |
-| Polymer Material Characterization | Mechanical, thermal and rheological testing |
-| Polymer Processing Analysis | Injection moulding & extrusion process studies |
-| Sustainable Polymer Research | Biodegradable and recycled polymer systems |
-| Manufacturing Process Optimization | CAD/CAM-driven process automation |
+## Projects
+
+| Project | Description |
+|--------|--------|
+| Injection Mould Design | Tool Design |
+| Polymer Characterization | Testing |
+| Process Optimization | Manufacturing |
+| Sustainable Materials | Research |
+| CAD/CAM | Product Design |
+
+---
 
 ## Contribution Snake
 
 <div align="center">
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg">
-  <img src="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg" alt="Contribution snake" width="100%">
+  <source media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake-dark.svg">
+
+  <source media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg">
+
+<img src="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg" width="100%">
+
 </picture>
+
 </div>
 
-<div align="center">
-<sub>Built with SVG, CSS &amp; SMIL animations &#8226; GitHub strips JavaScript, so everything above runs without it.</sub>
-</div>
-| Polymer Processing Analysis | Injection moulding & extrusion process studies |
-| Sustainable Polymer Research | Biodegradable and recycled polymer systems |
-| Manufacturing Process Optimization | CAD/CAM-driven process automation |
+---
 
-## Contribution Snake
+## Connect With Me
 
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg">
-  <img src="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg" alt="Contribution snake" width="100%">
-</picture>
+
+<a href="https://github.com/Nammakawin">
+GitHub
+</a>
+
 </div>
 
+---
+
 <div align="center">
-<sub>Built with SVG, CSS &amp; SMIL animations &#8226; GitHub strips JavaScript, so everything above runs without it.</sub>
+
+DESIGN • PROCESS • TEST • INNOVATE
+
 </div>
