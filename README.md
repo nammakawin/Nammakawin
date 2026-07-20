@@ -79,3 +79,20 @@ Status: Ready to Innovate.
 <div align="center">
 <sub>Built with SVG, CSS &amp; SMIL animations &#8226; GitHub strips JavaScript, so everything above runs without it.</sub>
 </div>
+| Polymer Processing Analysis | Injection moulding & extrusion process studies |
+| Sustainable Polymer Research | Biodegradable and recycled polymer systems |
+| Manufacturing Process Optimization | CAD/CAM-driven process automation |
+
+## Contribution Snake
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg">
+  <img src="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg" alt="Contribution snake" width="100%">
+</picture>
+</div>
+
+<div align="center">
+<sub>Built with SVG, CSS &amp; SMIL animations &#8226; GitHub strips JavaScript, so everything above runs without it.</sub>
+</div>
