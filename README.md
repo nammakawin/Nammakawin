@@ -12,9 +12,8 @@
 
 ![Profile views](https://komarev.com/ghpvc/?username=Nammakawin&color=2DD4BF&style=flat-square&label=PROFILE+VIEWS)
 [![GitHub](https://img.shields.io/badge/GitHub-Nammakawin-0F1626?style=flat-square&logo=github&logoColor=5EEAD4)](https://github.com/Nammakawin)
-<!-- LinkedIn: add later, e.g.
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kawin%20B%20K-0F1626?style=flat-square&logo=linkedin&logoColor=2DD4BF)](https://linkedin.com/in/your-handle)
--->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-nammakawin-0F1626?style=flat-square&logo=linkedin&logoColor=2DD4BF)](https://www.linkedin.com/in/nammakawin)
+[![Phone](https://img.shields.io/badge/Phone-%2B91%209361125151-0F1626?style=flat-square&logo=whatsapp&logoColor=A78BFA)](tel:+919361125151)
 
 </div>
 
