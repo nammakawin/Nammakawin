@@ -1,189 +1,83 @@
 <div align="center">
 
-<img src="banner.svg?v=3" width="100%" alt="Kawin B K Banner">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=1">
+  <img src="banner.svg?v=1" alt="Kawin B K — Polymer Engineering Lab banner" width="100%">
+</picture>
+
+<img src="lanyard.svg?v=1" alt="Kawin B K ID badge" width="220">
 
 <br>
 
-<img src="lanyard.svg?v=3" width="280">
-
-<br><br>
-
-![](https://komarev.com/ghpvc/?username=Nammakawin&style=for-the-badge&color=blueviolet)
-
-[![GitHub](https://img.shields.io/badge/GitHub-Nammakawin-181717?style=for-the-badge&logo=github)](https://github.com/Nammakawin)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kawin_B_K-0A66C2?style=for-the-badge&logo=linkedin)](YOUR_LINKEDIN_PROFILE_URL)
+![Profile views](https://komarev.com/ghpvc/?username=Nammakawin&color=2DD4BF&style=flat-square&label=PROFILE+VIEWS)
+[![GitHub](https://img.shields.io/badge/GitHub-Nammakawin-0F1626?style=flat-square&logo=github&logoColor=5EEAD4)](https://github.com/Nammakawin)
+<!-- LinkedIn: add later, e.g.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kawin%20B%20K-0F1626?style=flat-square&logo=linkedin&logoColor=2DD4BF)](https://linkedin.com/in/your-handle)
+-->
 
 </div>
 
----
-
-# Hi, I'm Kawin B K
-
-```bash
-kawin@polymer-lab:~$ whoami
-
-> B.Tech Polymer Engineering Student
-> CIPET DPMT Graduate
-> Polymer Processing Enthusiast
-> Tool Design Engineer
-> Manufacturing & Quality Control
-```
-
----
-
 ## About Me
 
-- B.Tech Polymer Engineering Student.
-- CIPET DPMT Graduate.
-- Passionate about Polymer Processing.
-- Interested in Injection Moulding and Tool Design.
-- Exploring Sustainable Materials.
-- Learning CAD/CAM and Manufacturing Automation.
-- Building projects in Polymer Engineering.
+B.Tech Polymer Engineering Student and CIPET DPMT graduate, interested in polymer processing, tool design, manufacturing, automation and sustainable materials.
 
----
-
-## Polymer Engineering Skills
-
-```text
-Injection Moulding          ██████████ 90%
-
-Tool Design                 █████████ 85%
-
-Polymer Testing             █████████ 85%
-
-CAD Design                  ████████ 80%
-
-Manufacturing               ████████ 80%
-
-Programming                 ███████ 70%
 ```
-
----
+kawin@polymer-lab:~$ polymer_process.py
+Loading Polymer Engineer...
+Initializing Skills...
+> Injection Moulding
+> Extrusion
+> Quality Testing
+> CAD Design
+Status: Ready to Innovate.
+```
 
 ## Tech Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python" />
+![Python](https://img.shields.io/badge/-Python-0F1626?style=for-the-badge&logo=python&logoColor=FF8A3D)
+![MATLAB](https://img.shields.io/badge/-MATLAB-0F1626?style=for-the-badge&logo=mathworks&logoColor=2DD4BF)
+![CATIA](https://img.shields.io/badge/-CATIA-0F1626?style=for-the-badge&logoColor=A78BFA)
+![Fusion360](https://img.shields.io/badge/-Fusion%20360-0F1626?style=for-the-badge&logo=autodesk&logoColor=FF8A3D)
+![CAD](https://img.shields.io/badge/-CAD%2FCAM-0F1626?style=for-the-badge&logoColor=5EEAD4)
 
 </div>
-
-| Skills |
-|-------|
-| Python |
-| MATLAB |
-| CATIA |
-| PTC Creo |
-| Fusion 360 |
-| Injection Moulding |
-| Extrusion |
-| Polymer Testing |
-| Tool Design |
-| Quality Control |
-| CAD/CAM |
-
----
 
 ## GitHub Stats
 
 <div align="center">
+<table>
+<tr>
+<td><img src="stats.svg?v=1" alt="GitHub stats" width="100%"></td>
+<td><img src="langs.svg?v=1" alt="Top languages" width="100%"></td>
+</tr>
+</table>
 
-<img src="stats.svg?v=3" width="48%">
-
-<img src="langs.svg?v=3" width="48%">
-
-<br><br>
-
-<img src="trophies.svg?v=3" width="100%">
-
+<img src="trophies.svg?v=1" alt="GitHub trophies" width="100%">
 </div>
 
----
+## Suggested Projects
 
-## Projects
-
-| Project | Description |
-|--------|--------|
-| Injection Mould Design | Tool Design and Manufacturing |
-| Polymer Characterization | Mechanical and Thermal Testing |
-| Polymer Processing Analysis | Injection Moulding and Extrusion |
-| Sustainable Materials | Biopolymers and Recycling |
-| CAD/CAM Automation | Product Development |
-
----
-
-## Polymer Engineering Lab
-
-```python
-class PolymerEngineer:
-
-    def design(self):
-        return "Innovative Products"
-
-    def process(self):
-        return "Efficient Manufacturing"
-
-    def test(self):
-        return "Quality Assurance"
-
-    def innovate(self):
-        return "Future Materials"
-
-
-print("Design. Process. Test. Innovate.")
-```
-
----
+| Project | Focus |
+|---|---|
+| Injection Mould Design | Tool design and mould-flow optimisation |
+| Polymer Material Characterization | Mechanical, thermal and rheological testing |
+| Polymer Processing Analysis | Injection moulding & extrusion process studies |
+| Sustainable Polymer Research | Biodegradable and recycled polymer systems |
+| Manufacturing Process Optimization | CAD/CAM-driven process automation |
 
 ## Contribution Snake
 
 <div align="center">
-
 <picture>
-
-<source media="(prefers-color-scheme: dark)"
-srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake-dark.svg">
-
-<source media="(prefers-color-scheme: light)"
-srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg">
-
-<img
-src="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg"
-width="100%"
-alt="Contribution Snake">
-
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg">
+  <img src="https://raw.githubusercontent.com/Nammakawin/Nammakawin/output/github-snake.svg" alt="Contribution snake" width="100%">
 </picture>
-
 </div>
 
----
-
-## Connect With Me
-
 <div align="center">
-
-<a href="https://github.com/Nammakawin">
-GitHub
-</a>
-
-&nbsp;&nbsp;&nbsp;
-
-<a href="YOUR_LINKEDIN_PROFILE_URL">
-LinkedIn
-</a>
-
-</div>
-
----
-
-<div align="center">
-
-## DESIGN • PROCESS • TEST • INNOVATE
-
-### Polymer Processing & Tool Design Engineer
-
-Made with SVG, CSS and GitHub Actions.
-
+<sub>Built with SVG, CSS &amp; SMIL animations &#8226; GitHub strips JavaScript, so everything above runs without it.</sub>
 </div>
