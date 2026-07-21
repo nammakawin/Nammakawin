@@ -129,9 +129,9 @@
     <text class="letter l0" x="50"  y="175">K</text>
     <text class="letter l1" x="100" y="175">A</text>
     <text class="letter l2" x="150" y="175">W</text>
-    <text class="letter l3" x="215" y="175">I</text>
-    <text class="letter l4" x="245" y="175">N</text>
-    <text class="letter l5" x="325" y="175">B</text>
+    <text class="letter l3" x="200" y="175">I</text>
+    <text class="letter l4" x="235" y="175">N</text>
+    <text class="letter l5" x="320" y="175">B</text>
     <text class="letter l6" x="385" y="175">K</text>
   </g>
 
